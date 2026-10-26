@@ -1,0 +1,5 @@
+prefix: "&8[&aInfiniteVillagerTrading&8] "
+
+no-permission: "%prefix%&cDu hast keine Berechtigung für diesen Befehl!"
+reload-success: "%prefix%&aDie Konfiguration wurde erfolgreich neu geladen!"
+reload-usage: "%prefix%&cVerwendung: /%label% reload"

@@ -6,7 +6,7 @@
 
     <groupId>de.shyyyuki</groupId>
     <artifactId>InfiniteVillagerTrading</artifactId>
-    <version>1.1</version>
+    <version>1.1.1</version>
     <packaging>jar</packaging>
 
     <name>InfiniteVillagerTrading</name>

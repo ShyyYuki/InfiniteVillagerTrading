@@ -1,4 +1,3 @@
-
 # ==========================================================
 #             Infinite Villager Trading Configuration
 # ==========================================================
@@ -7,6 +6,26 @@
 # true  = Villager trades have unlimited uses.
 # false = Vanilla trade usage limits are preserved.
 enabled: true
+
+# ----------------------------------------------------------
+# Language Settings
+# ----------------------------------------------------------
+# Sets the language used for plugin messages.
+# Language files are located in the plugin's lang/ directory.
+#
+# Available languages:
+# en_us = English (United States)
+# de_de = German (Germany)
+#
+# Example: language: en_us
+#          language: de_de
+#
+# If the selected language file is missing or invalid,
+# the plugin falls back to en_us.
+#
+# A language change takes effect after a plugin reload
+# using /infinitevillagertrading reload.
+language: en_us
 
 # Prevent villager trade prices from increasing after a player
 # attacks a villager.
