@@ -117,10 +117,12 @@ wandering-trader:
 
 ### Configuration options
 
-| Option | Default | Description |
-|---|---|---|
-| `enabled` | `true` | Enables or disables unlimited trading. |
-| `prevent-price-increase-on-hit` | `true` | Enables or disables the trade price-reset workaround after a player attacks a villager. |
+| Option                                           | Default | Description                                                                                     |
+| ------------------------------------------------ | ------- | ----------------------------------------------------------------------------------------------- |
+| `enabled`                                        | `true`  | Enables or disables unlimited trading.                                                          |
+| `prevent-price-increase-on-hit`                  | `true`  | Enables or disables the trade price-reset workaround after a player attacks a villager.         |
+| `wandering-trader.enabled`                       | `true`  | Enables or disables unlimited trading for wandering traders.                                    |
+| `wandering-trader.prevent-price-increase-on-hit` | `true`  | Enables or disables the trade price-reset workaround after a player attacks a wandering trader. |
 
 After changing the configuration, use `/infinitevillagertrading reload` to reload it.
 
