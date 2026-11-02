@@ -5,6 +5,7 @@ import de.shyyyuki.infiniteVillagerTrading.config.ConfigManager;
 import de.shyyyuki.infiniteVillagerTrading.utils.MessagesUtil;
 import de.shyyyuki.infiniteVillagerTrading.utils.UpdateChecker;
 import de.shyyyuki.infiniteVillagerTrading.wanderingtrader.WanderingTraderHandler;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Villager;
 import org.bukkit.event.EventHandler;
@@ -45,6 +46,10 @@ public final class InfiniteVillagerTrading extends JavaPlugin implements Listene
      */
     @Override
     public void onEnable() {
+
+        int pluginId = 35085;
+        new Metrics(this, pluginId);
+
         configManager = new ConfigManager(this);
         configManager.initialize();
 
