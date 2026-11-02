@@ -1,4 +1,3 @@
-
 package de.shyyyuki.infiniteVillagerTrading.utils;
 
 import com.google.gson.JsonArray;

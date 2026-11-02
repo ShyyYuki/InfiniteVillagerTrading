@@ -1,4 +1,3 @@
-
 package de.shyyyuki.infiniteVillagerTrading.config;
 
 import de.shyyyuki.infiniteVillagerTrading.InfiniteVillagerTrading;
@@ -64,6 +63,30 @@ public final class ConfigManager {
     public boolean isPriceProtectionEnabled() {
         return getConfig().getBoolean(
                 "prevent-price-increase-on-hit",
+                true
+        );
+    }
+
+    /**
+     * Checks whether infinite trading for wandering traders is enabled.
+     *
+     * @return true if wandering trader trading is enabled
+     */
+    public boolean isWanderingTraderEnabled() {
+        return getConfig().getBoolean(
+                "wandering-trader.enabled",
+                true
+        );
+    }
+
+    /**
+     * Checks whether price protection for wandering traders is enabled.
+     *
+     * @return true if wandering trader price protection is enabled
+     */
+    public boolean isWanderingTraderPriceProtectionEnabled() {
+        return getConfig().getBoolean(
+                "wandering-trader.prevent-price-increase-on-hit",
                 true
         );
     }

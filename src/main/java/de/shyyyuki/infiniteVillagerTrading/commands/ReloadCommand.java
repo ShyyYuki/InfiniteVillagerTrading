@@ -1,4 +1,3 @@
-
 package de.shyyyuki.infiniteVillagerTrading.commands;
 
 import de.shyyyuki.infiniteVillagerTrading.InfiniteVillagerTrading;

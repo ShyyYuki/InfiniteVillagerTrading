@@ -27,6 +27,9 @@ enabled: true
 # using /infinitevillagertrading reload.
 language: en_us
 
+# ----------------------------------------------------------
+# Price-Increase Settings
+# ----------------------------------------------------------
 # Prevent villager trade prices from increasing after a player
 # attacks a villager.
 #
@@ -36,3 +39,13 @@ language: en_us
 # Note: The shared Bukkit API cannot clear villager reputation.
 # Reputation-based discounts and penalties may still affect prices.
 prevent-price-increase-on-hit: true
+
+# ----------------------------------------------------------
+# Wandering Trader Settings
+# ----------------------------------------------------------
+
+# Enable or disable infinite trading for wandering traders.
+# true  = Wandering trader trades have unlimited uses.
+# false = Vanilla trade usage limits are preserved.
+wandering-trader:
+  enabled: true

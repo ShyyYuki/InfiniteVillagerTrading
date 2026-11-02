@@ -62,6 +62,29 @@ The configuration file is generated automatically when the plugin starts for the
 # false = Vanilla trade usage limits are preserved.
 enabled: true
 
+# ----------------------------------------------------------
+# Language Settings
+# ----------------------------------------------------------
+# Sets the language used for plugin messages.
+# Language files are located in the plugin's lang/ directory.
+#
+# Available languages:
+# en_us = English (United States)
+# de_de = German (Germany)
+#
+# Example: language: en_us
+#          language: de_de
+#
+# If the selected language file is missing or invalid,
+# the plugin falls back to en_us.
+#
+# A language change takes effect after a plugin reload
+# using /infinitevillagertrading reload.
+language: en_us
+
+# ----------------------------------------------------------
+# Price-Increase Settings
+# ----------------------------------------------------------
 # Prevent villager trade prices from increasing after a player
 # attacks a villager.
 #
@@ -71,6 +94,16 @@ enabled: true
 # Note: The shared Bukkit API cannot clear villager reputation.
 # Reputation-based discounts and penalties may still affect prices.
 prevent-price-increase-on-hit: true
+
+# ----------------------------------------------------------
+# Wandering Trader Settings
+# ----------------------------------------------------------
+
+# Enable or disable infinite trading for wandering traders.
+# true  = Wandering trader trades have unlimited uses.
+# false = Vanilla trade usage limits are preserved.
+wandering-trader:
+  enabled: true
 ```
 
 ### Configuration options
@@ -121,26 +154,6 @@ gradlew.bat build
 The compiled JAR is normally generated in `build/libs/`.
 
 Use the build system configured in the repository.
-
-## Project Structure
-
-```text
-InfiniteVillagerTrading/
-├── src/
-│   └── main/
-│       ├── java/
-│       │   └── de/
-│       │       └── shyyyuki/
-│       │           └── infiniteVillagerTrading/
-│       │               ├── InfiniteVillagerTrading.java
-│       │               └── commands/
-│       │                   └── ReloadCommand.java
-│       └── resources/
-│           ├── config.yml
-│           └── plugin.yml
-├── README.md
-└── pom.xml
-```
 
 ## Contributing
 
