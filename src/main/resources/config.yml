@@ -49,3 +49,12 @@ prevent-price-increase-on-hit: true
 # false = Vanilla trade usage limits are preserved.
 wandering-trader:
   enabled: true
+
+  # Prevent wandering trader prices from increasing
+  # after a player attacks a wandering trader.
+  # true  = Enable the price-reset workaround.
+  # false = Keep vanilla price behavior.
+  #
+  # Note: Bukkit does not provide a direct way to clear
+  # wandering trader reputation.
+  prevent-price-increase-on-hit: true
